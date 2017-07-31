@@ -3,7 +3,7 @@ title: DentistSmile | Dental Jekyll Theme
 description: "A responsive Jekyll theme for dental clinics."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the name of your domain
-logo_url: svg/min/logo.svg
+logo_url: img/logo.svg
 
 # Hero
 hero: 
@@ -34,7 +34,7 @@ testimonials:
 map:
     zoom: 17
     address: Von schroeders 273, Viña del mar, Chile
-    address_details: svg/min/logo.svg
+    address_details: img/logo.svg
 
 # Social settings
 facebook: http://facebook.com
@@ -52,12 +52,16 @@ markdown: kramdown
 
 exclude: [
     package.json,
-    Gruntfile.js,
     node_modules,
-    .sass-cache,
     Gemfile,
     Gemfile.lock,
-    .gitignore
+    .gitignore,
+    .idea,
+    src
+]
+
+keep_files: [
+  dist
 ]
 
 # Theme Settings

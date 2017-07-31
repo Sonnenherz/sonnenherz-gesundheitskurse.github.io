@@ -1,0 +1,35 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+@import "~owlcarousel/owl-carousel/owl.carousel.css";
+@import "~magnific-popup/dist/magnific-popup.css";
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome.scss";
+
+
+@import "utils/config";
+@import "utils/mixins";
+@import "utils/extends";
+
+@import "base/global";
+@import "base/typography";
+
+@import "layout/layout";
+@import "layout/nav";
+@import "layout/footer";
+
+@import "components/hero";
+@import "components/form";
+@import "components/three-shade-columns";
+@import "components/section-title";
+@import "components/treatments";
+@import "components/about";
+@import "components/testimonials";
+@import "components/gallery";
+@import "components/svg-icons";
+@import "components/icons-style";
+@import "components/expandable-box";
+@import "components/tooltip";
+@import "components/team";
+@import "components/social";
+@import "components/ie";
