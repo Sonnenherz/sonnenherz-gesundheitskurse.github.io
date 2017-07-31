@@ -1,23 +1,29 @@
+//contains overrides
+@import "utils/config";
+
 $icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/_bootstrap.scss';
 
-@import "~owlcarousel/owl-carousel/owl.carousel.css";
-@import "~magnific-popup/dist/magnific-popup.css";
 $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome.scss";
 
+@import "~magnific-popup/dist/magnific-popup.css";
+@import "~owlcarousel/owl-carousel/owl.carousel.css";
 
-@import "utils/config";
+// utils
 @import "utils/mixins";
 @import "utils/extends";
 
+// base
 @import "base/global";
 @import "base/typography";
 
+// layout
 @import "layout/layout";
 @import "layout/nav";
 @import "layout/footer";
 
+// components
 @import "components/hero";
 @import "components/form";
 @import "components/three-shade-columns";
