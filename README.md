@@ -1,10 +1,4 @@
-# DentistSmile - Jekyll Theme
-
-A single page Jekyll theme for dental clinics. It's easily customizable and responsive. It comes with svg icons, google map and a working contact form. Docs can be found [here](http://obaez.com/dentistsmile-docs/).
-
-Here is a [live Demo](http://obaez.com/dentistsmile/)
-
-## Development
+# Development
 
 1. Install `ruby` (https://www.ruby-lang.org/)
  
@@ -19,13 +13,13 @@ Here is a [live Demo](http://obaez.com/dentistsmile/)
 4. Clone the project
 
    ```
-   git clone https://github.com/obaez/dentistsmile.git
+   git clone https://github.com/atais/speech.git
    ```
 
 5. Install npm dependencies
 
    ```
-   cd dentistsmile
+   cd speech
    npm install
    ```
    
@@ -35,7 +29,7 @@ Here is a [live Demo](http://obaez.com/dentistsmile/)
    npm run dev
    ```
 
-## Deploy to production
+# Deploy
 
 1. Build the solution with webpack
 
