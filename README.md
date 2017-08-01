@@ -42,7 +42,6 @@ Here is a [live Demo](http://obaez.com/dentistsmile/)
    ```
    npm run build
    ```
-   
 
 2. Enable GitHub to serve your website from `gh-pages` branch
 

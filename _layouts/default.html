@@ -1,20 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
 {% include head.html %}
+
 <body data-spy="scroll" data-offset="80" data-target=".scrollspy" id="top">
-    <!--[if lt IE 10]>
-        <p class="oldie">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.</p>
-    <![endif]-->
 
-    {% include header.html %}
- 
-        {{ content }}
-           
-    {% include footer.html %}
-    
-    {% if site.analytics %}
-        {% include analytics.html %}
-    {% endif %}
+<!--[if lt IE 10]>
+<p class="oldie">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to
+    better experience this site.</p>
+<![endif]-->
 
-    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script src="dist/main.bundle.js"></script>
+{% include header.html %}
+
+{% include hero.html %}
+
+{% include offer.html %}
+
+{% include about.html %}
+
+{% include prices.html %}
+
+{% include contact.html %}
+
+{% include map.html %}
+
+{% include footer.html %}
+
+{% include analytics.html %}
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMJAcHJ5guuewluHOFjymc6DGuIPiDF1I"
+        type="text/javascript"></script>
+<script src="dist/main.bundle.js"></script>
 </body>
 </html>

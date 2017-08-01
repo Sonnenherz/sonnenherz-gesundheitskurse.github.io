@@ -11,11 +11,17 @@
     }
     [class^="col-"] {
         @include breakpoint(small) {
-            display: flex; 
+            display: flex;
         }
     }
     .icon {
         font-size: 1.5rem;
         color: $colorPrimary;
     }
+
+    .description {
+        text-align: left;
+    }
+
+
 }
