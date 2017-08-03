@@ -4,8 +4,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
 
+    <!-- Meta -->
     <title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <link rel="canonical" href="{{ site.url }}" />
+    <link rel="author" href="https://github.com/atais" />
+
+    <!-- Faceboook meta -->
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{{ site.url }}/{{ site.hero }}">
+    <meta property="og:locale" content="pl_PL">
+
+    <!-- Twitter meta -->
+    <meta name="twitter:title" content="{{ site.title }}" />
+    <meta name="twitter:description" content="{{ site.description }}" />
+    <meta name="twitter:image" content="{{ site.url }}/{{ site.thumbnail }}" />
+    <meta name="twitter:card" content="summary" />
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="dist/main.bundle.css">

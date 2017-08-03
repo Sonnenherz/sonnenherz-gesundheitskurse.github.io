@@ -1,14 +1,20 @@
-# Site settings
-title: Logopedia
-description: ""
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the name of your domain
-logo_url: img/logo.png
+# Meta data
+title: "LogosArt | Logopedia medialna"
+description: "LogosArt oferuje profesjonalne usługi logopedyczne dla dorosłych, dzieci i młodzieży. Specjalizujemy się
+              w logopedii medialnej, pomocy osobom, których głos i dykcja stanowią podstawę warsztatu pracy oraz
+              w przygotowaniu do egzaminów do szkoły filmowej i teatralnej."
+keywords: "logopeda, logopedia, specjalista logopeda, łódź, logopeda łódź,
+            logopedia medialna, logopeda dla dzieci, logopeda dla młodzieży, logopeda dla dorosłych,
+            przygotowanie do szkoły teatralnej, przygotowanie do szkoły filmowej,
+            poprawa dykcji, poprawa artykulacji, sztuka prezentacji"
+url: "http://logosart.pl"
+thumbnail: "img/thumbnail.png"
+logo: "img/logo.png"
+hero: "img/hero.jpg"
 
 # Contact info
 contact:
     address: Tramwajowa 21 m.10 <br> 90-132 Łódź <br> Polska
-
 
 # Map
 map:
