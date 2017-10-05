@@ -3,3 +3,6 @@ _site
 node_modules/
 .idea
 package-lock.json
+.DS_Store
+/test/screenshots/*.fail.png
+/test/screenshots/*.diff.png
