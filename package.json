@@ -7,10 +7,10 @@
   "scripts": {
     "test": "concurrently 'npm run dev' 'npm run casper' -k -s first",
     "casper": "casperjs test test/test.js",
-    "dev": "concurrently 'jekyll serve --watch --host 0.0.0.0' 'webpack --watch --colors'",
+    "dev": "concurrently 'bundle exec jekyll serve --watch --host 0.0.0.0' 'webpack --watch --colors'",
     "build": "npm run clean && npm run jekyll-build && npm run webpack-build && npm run deploy",
     "clean": "rimraf _site",
-    "jekyll-build": "jekyll build",
+    "jekyll-build": "bundle exec jekyll build",
     "webpack-build": "webpack --progress --profile --bail",
     "deploy": "git-directory-deploy --directory _site --branch gh-pages"
   },

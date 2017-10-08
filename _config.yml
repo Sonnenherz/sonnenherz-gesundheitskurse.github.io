@@ -39,3 +39,6 @@ exclude: [
 keep_files: [
   dist
 ]
+
+plugins:
+  - jekyll-sitemap
