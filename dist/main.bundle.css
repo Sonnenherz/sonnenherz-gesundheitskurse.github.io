@@ -8677,13 +8677,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Nunito", sans-serif; }
 
 h1, .h1 {
-  font-size: 2rem; }
-
-h2, .h2 {
   font-size: 1.875rem; }
 
-h3, .h3 {
+h2, .h2 {
   font-size: 1.5rem; }
+
+h3, .h3 {
+  font-size: 1.143rem; }
 
 h4, .h4 {
   font-size: 1.143rem; }
@@ -8725,6 +8725,14 @@ a {
 -------------------------------*/
 strong {
   font-weight: 600; }
+
+/* Override Bootstrap*/
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 /* LAYOUT
 -------------------------------------------------*/
@@ -8852,7 +8860,7 @@ strong {
         color: #303e43;
         border-color: #fff;
         background: #fff; }
-    .contact .three-shade-col h3, .contact .three-shade-col a {
+    .contact .three-shade-col h2, .contact .three-shade-col a {
       color: #fff; }
     .contact .three-shade-col a {
       text-decoration: underline; }

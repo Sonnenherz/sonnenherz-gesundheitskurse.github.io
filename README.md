@@ -31,10 +31,10 @@
 
 # Deploy
 
-1. Build the solution with webpack
+1. Deploy the solution with webpack
 
    ```
-   npm run build
+   npm run deploy
    ```
 
 2. Enable GitHub to serve your website from `gh-pages` branch
