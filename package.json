@@ -8,11 +8,11 @@
     "test": "concurrently 'npm run dev' 'npm run casper' -k -s first",
     "casper": "casperjs test test/test.js",
     "dev": "concurrently 'bundle exec jekyll serve --watch --host 0.0.0.0' 'webpack --watch --colors'",
-    "build": "npm run clean && npm run jekyll-build && npm run webpack-build && npm run deploy",
+    "build": "npm run clean && npm run jekyll-build && npm run webpack-build",
     "clean": "rimraf _site",
     "jekyll-build": "bundle exec jekyll build",
     "webpack-build": "webpack --progress --profile --bail",
-    "deploy": "git-directory-deploy --directory _site --branch gh-pages"
+    "deploy": "npm run build && git-directory-deploy --directory _site --branch gh-pages"
   },
   "devDependencies": {
     "concurrently": "3.5.0",
