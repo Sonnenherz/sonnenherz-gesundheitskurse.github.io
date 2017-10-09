@@ -5,7 +5,7 @@ casper.test.begin('LogosArt', function () {
     phantomcss.init({
         rebase: casper.cli.get("rebase"),
         casper: casper,
-        libraryRoot: '',
+        failedComparisonsRoot: './test/failures/',
         screenshotRoot: './test/screenshots/',
         addLabelToFailedImage: false
     });

@@ -33,6 +33,8 @@ exclude: [
     .gitignore,
     .idea,
     src,
+    test,
+    Gemfile*,
     webpack*
 ]
 
