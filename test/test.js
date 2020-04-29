@@ -1,32 +1,36 @@
-var phantomcss = require('phantomcss');
+const puppeteer = require("puppeteer");
+const compareImages = require("resemblejs/compareImages");
+const fs = require("mz/fs");
 
-casper.test.begin('LogosArt', function () {
+function delay(time) {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, time);
+  });
+}
 
-    phantomcss.init({
-        rebase: casper.cli.get("rebase"),
-        casper: casper,
-        failedComparisonsRoot: './test/failures/',
-        screenshotRoot: './test/screenshots/',
-        addLabelToFailedImage: false
-    });
+(async () => {
+  const screenshotPath = "./test/screenshots";
+  const regressionScr = screenshotPath + "/screenshot_0.png";
+  const currentScr = screenshotPath + "/current.png";
 
-    casper.options.waitTimeout = 20000;
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
 
-    casper.start('http://localhost:4000/', function() {
-        this.waitForSelector('img.map-img');
-    });
-    casper.viewport(1920, 1080);
+  await page.setViewport({ width: 1920, height: 1080 });
+  await page.goto("http://localhost:4000");
+  await delay(2000);
 
-    casper.wait(1000, function () {
-        phantomcss.screenshot('html');
-    });
+  await page.screenshot({ path: currentScr, fullPage: true });
+  await browser.close();
 
-    casper.then(function () {
-        phantomcss.compareAll();
-    });
+  const data = await compareImages(
+    await fs.readFile(regressionScr),
+    await fs.readFile(currentScr),
+    {}
+  );
 
-    casper.run(function () {
-        phantomcss.getExitStatus(); // pass or fail?
-        casper.test.done();
-    });
-});
+  await fs.writeFile(screenshotPath + "/output.png", data.getBuffer());
+
+  console.log(data);
+  return data.rawMisMatchPercentage > 0;
+})();
