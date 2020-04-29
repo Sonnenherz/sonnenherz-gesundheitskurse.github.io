@@ -13,6 +13,7 @@ function delay(time) {
   const regressionScr = screenshotPath + "/screenshot_0.png";
   const currentScr = screenshotPath + "/current.png";
 
+  await delay(4000);
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
 
