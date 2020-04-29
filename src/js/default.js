@@ -1,5 +1,3 @@
-import SweetScroll from "sweet-scroll";
-
 /* global $, google */
 (function ($, google) {
   "use strict";
@@ -12,6 +10,7 @@ import SweetScroll from "sweet-scroll";
 
     /* Smooth scroll to section
         ----------------------------------------------*/
+    var SweetScroll = require("sweet-scroll");
     new SweetScroll({
       offset: "-70",
     });
