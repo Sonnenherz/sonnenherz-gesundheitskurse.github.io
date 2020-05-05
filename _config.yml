@@ -32,7 +32,6 @@ exclude: [
     node_modules,
     .gitignore,
     .idea,
-    src,
     test,
     Gemfile*,
     webpack*
