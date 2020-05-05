@@ -43,3 +43,6 @@ keep_files: [
 
 plugins:
   - jekyll-sitemap
+
+sass:
+    sass_dir: src/scss
