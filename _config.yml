@@ -32,6 +32,7 @@ exclude: [
     node_modules,
     .gitignore,
     .idea,
+    src,
     test,
     Gemfile*,
     webpack*
@@ -44,5 +45,3 @@ keep_files: [
 plugins:
   - jekyll-sitemap
 
-sass:
-    sass_dir: src/scss
