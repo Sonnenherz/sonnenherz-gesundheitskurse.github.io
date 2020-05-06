@@ -1,12 +1,7 @@
 # Meta data
-title: "Annikas Webseite"
-description: "LogosArt oferuje profesjonalne usługi logopedyczne dla dorosłych, dzieci i młodzieży. Specjalizujemy się
-              w logopedii medialnej, pomocy osobom, których głos i dykcja stanowią podstawę warsztatu pracy oraz służymy
-              radą i doświadczeniem młodzieży w przygotowaniach do egzaminów do szkoły filmowej i teatralnej."
-keywords: "logopeda, logopedia, specjalista logopeda, łódź, logopeda łódź, LogosArt, Grażyna Walasek,
-            logopedia medialna, logopeda dla dzieci, logopeda dla młodzieży, logopeda dla dorosłych,
-            przygotowanie do szkoły teatralnej, przygotowanie do szkoły filmowej,
-            poprawa dykcji, poprawa artykulacji, sztuka prezentacji"
+title: "Sonnenherz Gesundheitskurse"
+description: "Gesundheits- und Entspannungskurse im Raum Bielefeld. Mit mehr Selbstfürsorge durchs Leben."
+keywords: ""
 url: "https://falder.org/annikaswebseite"
 thumbnail: "img/thumbnail.png"
 logo: "img/logo.png"
@@ -14,15 +9,15 @@ hero: "img/hero.jpg"
 
 # Contact info
 contact:
-    address: Tramwajowa 21 m.10 <br> 90-132 Łódź <br> Polska
+    address: 
 
 # Map
 map:
-    address: Tramwajowa 21, Łódź, Poland
+    address: 
     address_details: img/logo.png
 
 # Footer
-copyright: © 2017 Michał Siatkowski - All rights reserved
+copyright: © 2020 Annika Werner - All rights reserved.
 
 # Build settings
 markdown: kramdown
