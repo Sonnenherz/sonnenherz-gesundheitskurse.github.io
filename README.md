@@ -5,10 +5,15 @@
 2. Install `Jekyll` (https://jekyllrb.com/docs/pages/)
 
    ```
-   gem install jekyll bundler
+   gem install jekyll bundler github-pages
    ```
 
 3. Install node (https://nodejs.org/)
+I also had to run
+```
+npm  install node-sass --scripts-prepend-node-path
+
+```
 
 4. Clone the project
 
