@@ -17,7 +17,7 @@ map:
     address_details: img/logo.png
 
 # Footer
-copyright: © 2020 Annika Werner - All rights reserved.
+copyright: © 2020 Anika Werner - All rights reserved.
 
 # Build settings
 markdown: kramdown
