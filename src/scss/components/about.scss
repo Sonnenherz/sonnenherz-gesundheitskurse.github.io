@@ -4,7 +4,8 @@
 
   @extend %space;
   .media {
-    margin-bottom: $space;
+    margin-bottom: $smallspace;
+    margin-top: $smallspace;
   }
 
   .media-left {
