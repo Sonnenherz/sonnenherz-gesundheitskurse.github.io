@@ -8,9 +8,32 @@ logo: "img/logo.png"
 hero: "img/hero.jpg"
 
 # Contact info
+# Emailadresse die auf der webseite benutzt wird
 contact:
-    address: 
+    email: "info@sonnenherz-gesundheitskurse.de"
 
+# Trage hier zwischen die " " ein, welcher Text in der Email 
+# eingetragen werden soll wenn man auf Jetzt buchen klickt.
+# Das schema der email ist dann
+# Anrede
+# starttext
+# - Kursname (Datum um Ort)
+# endtext
+# 
+# Wenn im Text ein zeilenumbruch vorkommen soll dann geht das mit %0D%0A
+# Normale Zeilenumbrüche werden ansonsten ignoriert.
+email-vorlage:
+    link-text: "Diesen Kurs buchen"
+    email-titel: "Anfrage zum Kurs" # kursname wird automatisch dahinter eingesetzt
+    anrede: "Liebe Annika,"
+    starttext: "ich möchte mich gerne für den folgenden Kurs registrieren:"
+    endtext: "Hier sind meine Daten:%0D%0A
+    Name: %0D%0A
+    Anschrift: %0D%0A
+    Abrechnung über die Krankenkasse geplant: %0D%0A
+    %0D%0A
+    Vielen Dank,"
+  
 # Map
 map:
     address: 
@@ -40,3 +63,5 @@ keep_files: [
 plugins:
   - jekyll-sitemap
 
+collections:
+  - kurse

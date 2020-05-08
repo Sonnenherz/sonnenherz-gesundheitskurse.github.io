@@ -19,21 +19,42 @@
                 </tr>
                 </thead>
                 <tbody>
+                {% for kurs in site.kurse %}
                 <tr>
-                    <td>Meditation und Achtsamkeit</td>
-                    <td>Freitags, 05.06.-07.08.2020 (Ausnahmen: 10.07. und 17.07.2020)</td>
-                    <td>14-15 Uhr</td>
-                    <td>110€</td>
-                    <td>Online</td>
+                    <td>{{ kurs.name }}
+                        {% if kurs.name-zusatz %}
+                        <br />
+                        <small>{{ kurs.name-zusatz}}</small> 
+                        {% endif %}
+                    </td>
+                    <td>{{ kurs.termine }} 
+                        {% if kurs.termine-zusatz %}
+                            <br />
+                            <small>{{ kurs.termine-zusatz }}</small> 
+                        {% endif %}
+                    </td>
+                    <td>{{ kurs.uhrzeit }}
+                        {% if kurs.uhrzeit-zusatz %}
+                            <br />
+                            <small>{{ kurs.uhrzeit-zusatz }}</small>
+                        {% endif %}
+                    </td>
+                    <td>{{ kurs.preis }}
+                        {% if kurs.preis-zusatz %}
+                            <br />
+                            <small>{{ kurs.preis-zusatz }}</small>
+                        {% endif %}
+                    </td>
+                    <td>{{ kurs.ort }}
+                        {% if kurs.ort-zusatz %}
+                            <br />
+                            <small>{{ kurs.ort-zusatz }}</small>
+                        {% endif %}
+                    </td>
+                    <td><a class="submit btn btn-default" href="mailto:{{ site.contact.email }}?&subject={{ site.email-vorlage.email-titel }} {{ kurs.name }}&body={{ site.email-vorlage.anrede  }}%0D%0A{{ site.email-vorlage.starttext  }}%0D%0A%0D%0A - {{ kurs.name  }} ({{ kurs.termine }} um {{ kurs.uhrzeit  }})%0D%0A%0D%0A{{ site.email-vorlage.endtext  }}" rel="EMAIL">{{ site.email-vorlage.link-text }}</a></td>
                 </tr>
-                <tr>
-                    <td>Autogenes Training (Erstattung durch die meisten Krankenkassen)</td>
-                    <td>Montags, 08.06.-27.07.2020</td>
-                    <td>19:00-20.30 Uhr</td>
-                    <td>110€</td>
-                    <td>Online</td>
-                </tr>
-                </tbody>
+                {% endfor %}
+            </tbody>
             </table>
 
             <br>
