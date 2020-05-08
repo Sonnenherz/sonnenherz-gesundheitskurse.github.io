@@ -3,7 +3,7 @@
 .main-footer {
     padding: 30px 0;
     color: $white;
-    background: lighten($colorPrimary, 7%);
+    background: $colorContrast;
     text-align: center;
     small {
         display: block;

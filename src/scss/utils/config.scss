@@ -27,9 +27,14 @@ $mercury: #e9e9e9;
 $alabaster: #f7f7f7;
 // $pelorous: #1D2528;
 $pelorous: #3dadb2;
+$hauptbildfarbe: #f7daa1;
+$hauptbilddunkler: #f3c872;
+$kontrastfarbe: #463f42;
 
 /* Color usage */
-$colorPrimary: $pelorous;
+/* $colorPrimary: $pelorous; */
+$colorPrimary: $hauptbildfarbe;
+$colorContrast: $kontrastfarbe;
 $colorHeading: $grey;
 $colorBase: $greyLight;
 $colorBg: $alabaster;
