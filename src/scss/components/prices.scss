@@ -7,10 +7,10 @@
   table {
     tr {
       th, td {
-        /* &:first-child {
-          width: 60%;
+        &:last-child {
+          text-align:right;
         }
-        &:nth-child(2), &:nth-child(3) {
+        /*&:nth-child(2), &:nth-child(3) {
           width: 20%;
         }
         */
