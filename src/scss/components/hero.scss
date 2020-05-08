@@ -10,9 +10,20 @@
   }
 
   .hero-content {
-    background-right: no-repeat;
-    background-size: cover;
-    height: 500px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      object-fit: cover;
+      width: 100%;
+    @include breakpoint(xsmall) {
+      height: calc(#{$screen-xs} / 2);
+    }
+    @include breakpoint(lsmall) {
+      height: calc(#{$screen-sm} / 2);
+    }
+    @include breakpoint(medium) {
+      height:500px;
+    }
   }
 
 }
