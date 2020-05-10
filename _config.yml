@@ -25,9 +25,9 @@ contact:
 email-vorlage:
     link-text: "Diesen Kurs buchen"
     email-titel: "Anfrage zum Kurs" # kursname wird automatisch dahinter eingesetzt
-    anrede: "Liebe Anika,"
+    anrede: "Liebe Frau Werner,"
     starttext: "ich möchte mich gerne für den folgenden Kurs registrieren:"
-    endtext: "Hier sind meine Daten:%0D%0A
+    endtext: "Meine Daten sind:%0D%0A
     Name: %0D%0A
     Anschrift: %0D%0A
     Abrechnung über die Krankenkasse geplant: %0D%0A
