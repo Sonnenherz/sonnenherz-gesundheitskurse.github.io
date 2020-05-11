@@ -1,5 +1,5 @@
 ---
-name:               "Meditation und Achtsamkeit"
+name:               "Meditation und Achtsamkeit (8 Termine)"
 name-zusatz:        ""
 termine:            "Freitags, 05.06. - 07.08.2020"
 termine-zusatz:     "(Ausnahmen: 10.07. und 17.07.2020)"
