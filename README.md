@@ -1,3 +1,6 @@
+# Webseite
+Erreichbar unter https://sonnenherz.github.io/sonnenherz-gesundheitskurse.github.io/
+
 # Development
 
 1. Install `ruby` (https://www.ruby-lang.org/)
