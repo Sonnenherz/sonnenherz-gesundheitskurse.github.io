@@ -1,5 +1,5 @@
 ---
-name:               "Autogenes Training"
+name:               "Autogenes Training (8 Termine)"
 name-zusatz:        "(Erstattung durch die meisten Krankenkassen)"
 termine:            "Montags, 08.06.-27.07.2020"
 termine-zusatz:     ""
