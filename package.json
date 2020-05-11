@@ -41,7 +41,7 @@
     "github-pages": "^3.0.2",
     "gmap3": "7.2.0",
     "jekyll": "^3.0.0-beta1",
-    "jquery": "2.2.4",
+    "jquery": ">=3.5.0",
     "magnific-popup": "1.1.0",
     "owlcarousel": "1.3.3",
     "sweet-scroll": "^2.2.1"
