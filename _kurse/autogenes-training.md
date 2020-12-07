@@ -1,9 +1,9 @@
 ---
 name:               "Autogenes Training (8 Termine)"
 name-zusatz:        ""
-termine:            "Donnerstags, 03.09.-05.11.2020"
-termine-zusatz:     "Ausnahme: 10.09. und 17.09.2020"
-uhrzeit:            "19-20.30 Uhr"
+termine:            "Montags, 08.02.-29.03.2021"
+termine-zusatz:     ""
+uhrzeit:            "18:30-20 Uhr"
 uhrzeit-zusatz:     ""
 preis:              "110€"
 preis-zusatz:       ""
