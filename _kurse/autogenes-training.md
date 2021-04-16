@@ -1,12 +1,12 @@
 ---
-name:               "Autogenes Training (8 Termine)"
+name:               "Aktuell finden leider keine Kurse statt"
 name-zusatz:        ""
-termine:            "Montags, 08.02.-29.03.2021"
+termine:            ""
 termine-zusatz:     ""
-uhrzeit:            "18:30-20 Uhr"
+uhrzeit:            ""
 uhrzeit-zusatz:     ""
-preis:              "110€"
+preis:              ""
 preis-zusatz:       ""
-ort:                "Online"
+ort:                ""
 ort-zusatz:         ""
 ---
